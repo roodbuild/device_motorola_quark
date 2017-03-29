@@ -83,6 +83,20 @@ persist.rmnet.mux=enabled
 # Qualcomm
 ro.vendor.extension_library=/system/vendor/lib/libqc-opt.so
 
+# IMS
+net.lte.volte_call_capable=true
+persist.ims.enableADBLogs=1
+persist.ims.enableDebugLogs=1
+persist.radio.calls.on.ims=true
+persist.radio.csvt.enabled=false
+persist.radio.jbims=1
+persist.radio.ROTATION_ENABLE=1
+persist.radio.VT_ENABLE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.VT_USE_MDM_TIME=0
+persist.dbg.volte_avail_ovr=1
+
+
 # Radio
 persist.radio.no_wait_for_card=1
 persist.radio.apm_sim_not_pwdn=1
@@ -93,7 +107,7 @@ persist.data.qmi.adb_logmask=0
 persist.radio.msgtunnel.start=true
 persist.radio.oem_ind_to_both=false
 persist.data.netmgrd.qos.enable=true
-persist.radio.VT_USE_MDM_TIME=1
+#persist.radio.VT_USE_MDM_TIME=1
 
 ro.use_data_netmgrd=true
 ro.data.large_tcp_window_size=true
@@ -148,5 +162,5 @@ ro.device.rear_cam=21 MP
 ro.device.front_cam=2 MP
 ro.device.screen_res=1440x2560 pixels (~565 ppi)
 
- # wi-fi call
- persist.dbg.wfc_avail_ovr=1
+# wi-fi call
+persist.dbg.wfc_avail_ovr=1
