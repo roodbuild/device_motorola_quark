@@ -1,7 +1,7 @@
 $(call inherit-product, device/motorola/quark/full_quark.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
